@@ -12,7 +12,7 @@ type Config struct {
 
 func (c Config) ConnectionString() string {
 	return fmt.Sprintf(
-		"host=%s user=%s password=%s dbname=%s port=%s sslmode=require",
+		"host=%s user=%s password=%s dbname=%s port=%s sslmode=disable",
 		c.Host, c.User, c.Password, c.DB, c.Port,
 	)
 }
