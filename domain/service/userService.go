@@ -16,3 +16,7 @@ func NewUserService(repo repository.UserRepository) *UserService {
 func (s *UserService) FindByID(uuid string) (*entity.User, error) {
 	return s.repo.FindByID(uuid)
 }
+
+func (s *UserService) Create(user *entity.User) (*entity.User, error) {
+	return s.repo.Create(user)
+}
