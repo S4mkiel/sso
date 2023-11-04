@@ -20,6 +20,6 @@ func RegisterControllers(app *fiber.App, authController *controller.AuthControll
 	app.Get("/health", func(c *fiber.Ctx) error {
 		return c.SendString("Hello, World! 👋")
 	})
-
+ //
 	authController.RegisterControllers(v1)
 }
